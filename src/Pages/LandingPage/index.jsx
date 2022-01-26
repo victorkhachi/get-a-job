@@ -1,17 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './index.scss'
 import Logo from './COmponents/Logo'
 import Paystack from '../../assets/png/paystack.png'
 import Kpmg from '../../assets/png/kpmg.png'
 import Google from '../../assets/png/google.png'
 import Location from '../../assets/svg/Location'
-
+import Search from '../../assets/svg/Search'
+import Man from '../../assets/png/image.png'
 export default function Landing(){
 
-
+   const [display,setDisplay]=useState('')
     return(
         <div class='body'>
-            <div className="top">
+            <div className="top" onClick={()=>setDisplay('')}>
                    <div className="background">
                          
                          </div>
@@ -36,8 +37,9 @@ export default function Landing(){
                          <p>With verified, up-to-date job listings directly from employer websites, we create a premium experience for job seekers, employers, and data seekers alike.</p>
                          <div className="inputs">
                              <input type="text" placeholder='Enter keywords, skill, interest' style={{width:'45%'}} />
-                             <div class='location'><span><Location /></span><input type="text" placeholder='Location' /></div>
-                             <div className="search_bar"></div>
+                             <div class='location' onClick={(e)=>e.stopPropagation()}><span style={{display:`${display}`}}><Location /></span><input onFocus={(e)=>{
+                                 setDisplay('none')}} type="text" placeholder='Location' /></div>
+                             <div className="search_bar"><Search /></div>
                          </div>
                          <div className="trusted">
                              <p>Trusted by</p>
@@ -49,7 +51,11 @@ export default function Landing(){
                              </div>
                          </div>
                      </div>
-                     <div className="image"></div>
+                     <div className="image">
+                         <div className="img_container">
+                             <div class='span'><img src={Man} alt="" /></div>
+                         </div>
+                     </div>
                  </div>
             </div>
  
