@@ -21,6 +21,7 @@ export default function Landing(){
             <Row5 />
             <GetStarted />
             <Footer />
+            <div className="copy">© Copyright Get-A-Job RMS 2019, All right reserved</div>
         </div>
     )
 }

@@ -14,6 +14,7 @@ export default function Row5(){
                    <Frame Img={Black} />
                 </div>
                 <div class='write_up'>
+                      <span class='quote'>“</span>
                      <div className="top">
                          <PrevArrow /><span style={{marginLeft:'10px'}}><NextArrow /></span>
                      </div>

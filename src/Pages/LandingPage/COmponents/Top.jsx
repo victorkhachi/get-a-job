@@ -41,7 +41,9 @@ export default function Top(){
                          <p>With verified, up-to-date job listings directly from employer websites, we create a premium experience for job seekers, employers, and data seekers alike.</p>
                          <div className="inputs">
                              <input type="text" placeholder='Enter keywords, skill, interest' style={{width:'45%'}} />
-                             <div class='location' onClick={(e)=>e.stopPropagation()}><span style={{display:`${display}`}}><Location /></span><input onFocus={(e)=>{
+                             <div class='location' onClick={(e)=>e.stopPropagation()}>
+                                 <span style={{display:`${display}`}}><Location /></span>
+                                 <input onFocus={(e)=>{
                                  setDisplay('none')}} type="text" placeholder='Location' /></div>
                              <div className="search_bar"><Search /></div>
                          </div>

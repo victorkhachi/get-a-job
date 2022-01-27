@@ -387,7 +387,7 @@ font-style: normal;
     }
 
     .hiw{
-        height: 80%;
+        height: 95%;
         // width: 100%;
         display: flex;
         padding: 25px 80px;
@@ -586,11 +586,23 @@ color: #9B9B9B;
            justify-content: space-between;
            .image{
                width: 30%;
-               height: 250px;
+               height: 300px;
            }
            .write_up{
                width: 65%;
-
+               position: relative;
+               .quote{
+                    font-family: GT Walsheim Pro;
+                   font-size: 250px;
+                   z-index: -1;
+                   line-height: 286px;
+                   letter-spacing: 0em;
+                   text-align: left;
+                   position: absolute;
+                   color: #baf0c8;
+                   top: -50px;
+                   opacity: 70%;
+               }
                .top{
                    width: 100%;
                    display: flex;
@@ -758,6 +770,20 @@ text-align: left;
                 }
             }
         }
+    }
+    .copy{
+        width: 100%;
+        height: 10px;
+        padding: 24px;
+        text-align: center;
+        font-family: GT Walsheim Pro;
+       font-size: 12px;
+       font-style: normal;
+      font-weight: 500;
+       line-height: 14px;
+      letter-spacing: 0em;
+       color: #3F403F;
+
     }
 }
 }
@@ -1356,7 +1382,9 @@ text-align: left;
                 }
                 .write_up{
                     width: 65%;
-     
+                      .quote{
+                          display: none;
+                      }
                     .top{
                         width: 100%;
                         display: flex;
@@ -1525,6 +1553,20 @@ text-align: left;
                     }
                 }
             }
+        }
+        .copy{
+            width: 100%;
+            height: 10px;
+            padding: 24px;
+            text-align: center;
+            font-family: GT Walsheim Pro;
+           font-size: 12px;
+           font-style: normal;
+          font-weight: 500;
+           line-height: 14px;
+          letter-spacing: 0em;
+           color: #3F403F;
+    
         }
      
 
