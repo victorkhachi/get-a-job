@@ -1,4 +1,8 @@
 import Logo from "../../../assets/png/Footer.png";
+import FaceBook from "../../../assets/svg/FaceBook";
+import Instagram from "../../../assets/svg/Instagram";
+import LinkedIn from "../../../assets/svg/LinkedIn";
+import Twitter from "../../../assets/svg/Twitter";
 
 export default function Footer(){
 
@@ -7,7 +11,7 @@ export default function Footer(){
            <hr />
            <div class='footer_content'>
               <div className="left">
-            <div>
+             <div class='img'>
                 <img src={Logo} alt="" />
             </div>
             <p>Getajobng provides a full online service for anyone looking for a new job. We're not a recruitment agency, we're a job site.</p>
@@ -35,19 +39,23 @@ export default function Footer(){
                             <td>Post a Job</td>
 
                         </tr>
-
                         <tr>
                             <td>Terms and Condition</td>
                             <td>FAQ</td>
                             <td>FAQ</td>
 
-                        </tr>
-                    
+                        </tr>                    
                 </table>
           </div>
           <div className="social">
                 <p>Social Media:</p>
-                <div></div>
+                <div>
+                    <span><Instagram/></span>
+                    <span><FaceBook /></span>
+                    <span><Twitter /></span>
+                    <span><LinkedIn /></span>
+
+                </div>
           </div>
           </div>
  

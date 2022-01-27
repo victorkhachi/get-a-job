@@ -10,15 +10,18 @@ import Frame from './ImageFrame'
 import { useState } from "react";
 export default function Top(){
    const [display,setDisplay]=useState('')
-       
+       const [left,setLeft]=useState(-100)
      return(
          <Fragment>
                         <div className="top" onClick={()=>setDisplay('')}>
                    <div className="background">
                          
                          </div>
-                 <div className="heading">
-                     <div><Logo /></div>
+                 <div onClick={()=>setLeft(0)} className="floating_logo">
+                     <Logo/>
+                 </div>
+                 <div style={{left:`${left}%`}} onClick={()=>setLeft(-100)} className="heading">
+                     <div class='logo'><Logo /> </div>
                      
                      <div class='links'>
                         <p>Companies</p>

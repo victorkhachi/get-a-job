@@ -6,7 +6,7 @@ export default function GetStarted(){
                
                <div className="image">
                <div className="overlay">
-                   <div style={{marginRight:'32px'}}>
+                   <div class='write_up_container'>
                      <h1>
                        Get a Job you actually like
                      </h1>
