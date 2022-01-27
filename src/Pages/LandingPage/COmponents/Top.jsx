@@ -6,6 +6,7 @@ import Google from '../../../assets/png/google.png'
 import Location from '../../../assets/svg/Location'
 import Search from '../../../assets/svg/Search'
 import Man from '../../../assets/png/image.png'
+import Frame from './ImageFrame'
 import { useState } from "react";
 export default function Top(){
    const [display,setDisplay]=useState('')
@@ -52,9 +53,7 @@ export default function Top(){
                          </div>
                      </div>
                      <div className="image">
-                         <div className="img_container">
-                             <div class='span'><img src={Man} alt="" /></div>
-                         </div>
+                        <Frame Img={Man} />
                      </div>
                  </div>
             </div>
