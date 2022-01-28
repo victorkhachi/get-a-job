@@ -791,6 +791,8 @@ text-align: left;
     .body{
     
         height: 100vh;
+        width: 100%;
+        overflow: hidden;
         overflow-y: scroll;
     
         input:focus{
@@ -799,8 +801,9 @@ text-align: left;
         .top{
             
             height: 80%;
+            width: 94%;
             border-radius: 0 0 12px 12px;
-            padding: 0px 40px;
+            padding: 0px 10px;
             position: relative;
              
 
@@ -1037,6 +1040,7 @@ text-align: left;
         .recommendation{
             padding: 13px;
             margin-top: 20px;
+            width: 95%;
             h1{
                 color: #3F403F;
                 // font-family: GT Walsheim Pro;
@@ -1176,9 +1180,8 @@ text-align: left;
             }
         }
         .hiw{
-            // height: 80%;
-            // width: 100%;
-            // display: flex;
+            
+            width: 95%;
             padding: 20px;
             justify-content: space-between;
     
@@ -1269,7 +1272,7 @@ text-align: left;
             // width: 100%;
             display: flex;
             justify-content: center;
-            padding: 30px;
+            padding: 10px;
             flex-direction: column;
     
             h2{
@@ -1326,10 +1329,10 @@ text-align: left;
             // padding-left: 80px;
     
             .background{
-                // width: 100%;
+                width: 95%;
                 background-color: aliceblue;
                 height: 100%;
-                padding: 30px;
+                padding: 10px;
                 // display: flex;
                 justify-content: space-between;
 
